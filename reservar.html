@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuestPass CR - Reservar</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-container">
+            <a href="index.html" class="brand-logo">QuestPass CR</a>
+            <nav class="main-nav" aria-label="Navegación principal">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="experiencias.html">Experiencias</a></li>
+                    <li><a href="reservar.html" class="active">Reservar</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="login.html">Iniciar Sesión</a></li>
+                    <li><a href="admin.html">Admin Panel</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="catalog-header">
+            <h1>Reserva tu próxima experiencia</h1>
+            <p>Completa el formulario para solicitar tus entradas a una experiencia de QuestPass CR.</p>
+        </section>
+
+        <section class="form-card" aria-labelledby="titulo-reserva">
+            <h2 id="titulo-reserva">Formulario de reserva</h2>
+            <p class="form-intro">Los campos marcados con * son obligatorios.</p>
+
+            <form action="#" method="post" class="site-form">
+                <div class="form-group">
+                    <label for="experiencia">Experiencia *</label>
+                    <select id="experiencia" name="experiencia" required>
+                        <option value="" selected disabled>Selecciona una experiencia</option>
+                        <option value="QST-001">QST-001 - El Archivo 47</option>
+                        <option value="QST-002">QST-002 - Retro Arena 16-Bit</option>
+                        <option value="QST-003">QST-003 - Pintura de Miniaturas Sci-Fi</option>
+                        <option value="QST-004">QST-004 - Noche de Trivia Geek</option>
+                        <option value="QST-005">QST-005 - Primera misión: D&amp;D para principiantes</option>
+                        <option value="QST-006">QST-006 - Misterio Digital: Hackers de Medianoche</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="fecha">Fecha *</label>
+                        <input type="date" id="fecha" name="fecha" min="2026-10-11" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="entradas">Cantidad de entradas *</label>
+                        <input type="number" id="entradas" name="entradas" min="1" max="6" value="1" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nombre">Nombre completo *</label>
+                        <input type="text" id="nombre" name="nombre" autocomplete="name" placeholder="Tu nombre completo" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="correo">Correo electrónico *</label>
+                        <input type="email" id="correo" name="correo" autocomplete="email" placeholder="nombre@correo.com" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" autocomplete="tel" placeholder="8888-8888" pattern="[0-9]{4}-?[0-9]{4}">
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="terminos" name="terminos" required>
+                    <label for="terminos">Confirmo que los datos de la reserva son correctos. *</label>
+                </div>
+
+                <button type="submit" class="btn btn-primary form-submit">Confirmar reserva</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>QuestPass CR</h3>
+                <p>Plataforma para el descubrimiento y reserva de actividades de entretenimiento alternativo.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Enlaces rápidos</h4>
+                <ul>
+                    <li><a href="experiencias.html">Ver catálogo</a></li>
+                    <li><a href="reservar.html">Formulario de Reserva</a></li>
+                    <li><a href="contacto.html">Contacto y Soporte</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 QuestPass CR. Proyecto académico - Universidad CENFOTEC.</p>
+        </div>
+    </footer>
+</body>
+</html>

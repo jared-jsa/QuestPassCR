@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuestPass CR - Contacto y Soporte</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-container">
+            <a href="index.html" class="brand-logo">QuestPass CR</a>
+            <nav class="main-nav" aria-label="Navegación principal">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="experiencias.html">Experiencias</a></li>
+                    <li><a href="reservar.html">Reservar</a></li>
+                    <li><a href="contacto.html" class="active">Contacto</a></li>
+                    <li><a href="login.html">Iniciar Sesión</a></li>
+                    <li><a href="admin.html">Admin Panel</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="catalog-header">
+            <h1>Contacto y Soporte</h1>
+            <p>¿Tienes una consulta sobre una experiencia o reserva? Envíanos un mensaje y con gusto te ayudaremos.</p>
+        </section>
+
+        <div class="contact-layout">
+            <section class="form-card" aria-labelledby="titulo-contacto">
+                <h2 id="titulo-contacto">Envíanos un mensaje</h2>
+                <p class="form-intro">Los campos marcados con * son obligatorios.</p>
+
+                <form action="#" method="post" class="site-form">
+                    <div class="form-group">
+                        <label for="nombre">Nombre completo *</label>
+                        <input type="text" id="nombre" name="nombre" autocomplete="name" placeholder="Tu nombre completo" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="correo">Correo electrónico *</label>
+                        <input type="email" id="correo" name="correo" autocomplete="email" placeholder="nombre@correo.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="asunto">Asunto *</label>
+                        <select id="asunto" name="asunto" required>
+                            <option value="" selected disabled>Selecciona un asunto</option>
+                            <option value="reserva">Consulta sobre una reserva</option>
+                            <option value="experiencia">Información de una experiencia</option>
+                            <option value="pago">Consulta de pago</option>
+                            <option value="soporte">Soporte técnico</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje *</label>
+                        <textarea id="mensaje" name="mensaje" rows="6" placeholder="Escribe tu consulta aquí..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary form-submit">Enviar mensaje</button>
+                </form>
+            </section>
+
+            <aside class="support-card" aria-labelledby="titulo-soporte">
+                <h2 id="titulo-soporte">Datos de soporte</h2>
+                <p><strong>Correo:</strong> soporte@questpasscr.com</p>
+                <p><strong>Teléfono:</strong> +506 2222-2026</p>
+                <p><strong>Horario:</strong> Lunes a viernes, 8:00 a.m. - 5:00 p.m.</p>
+                <p><strong>Ubicación:</strong> San José, Costa Rica</p>
+                <p class="support-note">Para consultas sobre una reserva, incluye el nombre de la experiencia y la fecha seleccionada.</p>
+            </aside>
+        </div>
+
+        <section class="faq-section" aria-labelledby="titulo-faq">
+            <h2 id="titulo-faq">Preguntas frecuentes</h2>
+            <div class="faq-list">
+                <details>
+                    <summary>¿Cómo puedo reservar una experiencia?</summary>
+                    <p>Ingresa a la sección Reservar, selecciona la experiencia, la fecha y la cantidad de entradas. Luego completa tus datos y confirma la solicitud.</p>
+                </details>
+                <details>
+                    <summary>¿Puedo cambiar la fecha de mi reserva?</summary>
+                    <p>Sí. Comunícate con soporte indicando los datos de tu reserva. Los cambios dependen de la disponibilidad de la experiencia.</p>
+                </details>
+                <details>
+                    <summary>¿Qué sucede si una experiencia se cancela?</summary>
+                    <p>QuestPass CR notificará a las personas registradas por correo electrónico y brindará información sobre reprogramación o alternativas disponibles.</p>
+                </details>
+                <details>
+                    <summary>¿Las experiencias tienen límite de participantes?</summary>
+                    <p>Sí. Cada actividad tiene una capacidad distinta. Puedes consultar el rango de participantes en el catálogo de experiencias.</p>
+                </details>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>QuestPass CR</h3>
+                <p>Plataforma para el descubrimiento y reserva de actividades de entretenimiento alternativo.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Enlaces rápidos</h4>
+                <ul>
+                    <li><a href="experiencias.html">Ver catálogo</a></li>
+                    <li><a href="reservar.html">Formulario de Reserva</a></li>
+                    <li><a href="contacto.html">Contacto y Soporte</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 QuestPass CR. Proyecto académico - Universidad CENFOTEC.</p>
+        </div>
+    </footer>
+</body>
+</html>
