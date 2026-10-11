@@ -262,6 +262,14 @@ main {
     font-size: 0.85rem;
 }
 
+input{
+    border-radius: 8px;
+    border:#18181b 0px;
+    background-color: var(--primary-color);
+    margin: 2px;
+    padding: 2px;
+}
+
 /* responsive */
 @media (min-width: 768px) {
     .header-container {
