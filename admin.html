@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QuestPass CR - Inicio</title>
+    <title>QuestPass CR - Panel de Administración</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
 
     <!-- Header y Navegación -->
     <header class="main-header">
         <div class="header-container">
             <a href="index.html" class="brand-logo">QuestPass CR</a>
-            
+
             <nav class="main-nav" aria-label="Navegación principal">
                 <ul>
-                    <li><a href="index.html" >Inicio</a></li>
+                    <li><a href="index.html">Inicio</a></li>
                     <li><a href="experiencias.html">Experiencias</a></li>
                     <li><a href="reservar.html">Reservar</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
@@ -27,62 +29,78 @@
     </header>
 
 
-<main>
+    <main>
+        <section class="catalog-header">
+            <h1>Panel de Administración</h1>
+            <p>Gestión de experiencias y reservas registradas.</p>
+        </section>
 
-    <section>
-        <h2>Experiencias</h2>
+        <div class="admin-grid">
+            <!-- Tabla de Experiencias -->
+            <section class="card">
+                <h2>Experiencias</h2>
+                <div class="table-container">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Código</th>
+                                <th>Estado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>QST-001</td>
+                                <td>Disponible</td>
+                            </tr>
+                            <tr>
+                                <td>QST-002</td>
+                                <td>Disponible</td>
+                            </tr>
+                            <tr>
+                                <td>QST-003</td>
+                                <td>Disponible</td>
+                            </tr>
+                            <tr>
+                                <td>QST-004</td>
+                                <td>Disponible</td>
+                            </tr>
+                            <tr>
+                                <td>QST-005</td>
+                                <td>Disponible</td>
+                            </tr>
+                            <tr>
+                                <td>QST-006</td>
+                                <td>Disponible</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
 
-        <table>
-
-            <thead>
-                <tr>
-                    <th>Código</th>
-                    <th>Estado</th>
-                </tr>
-            </thead>
-
-            <tbody>
-                <tr><td>QST-001</td><td>Disponible</td></tr>
-                <tr><td>QST-002</td><td>Disponible</td></tr>
-                <tr><td>QST-003</td><td>Disponible</td></tr>
-                <tr><td>QST-004</td><td>Disponible</td></tr>
-                <tr><td>QST-005</td><td>Disponible</td></tr>
-                <tr><td>QST-006</td><td>Disponible</td></tr>
-            </tbody>
-
-        </table>
-
-    </section>
-
-    <section>
-
-        <h2>Reservas</h2>
-
-        <table>
-
-            <thead>
-                <tr>
-                    <th>Nombre</th>
-                    <th>Experiencia</th>
-                    <th>Cantidad</th>
-                </tr>
-            </thead>
-
-            <tbody>
-
-                <tr>
-                    <td colspan="3">
-                        Aún no hay reservas registradas
-                    </td>
-                </tr>
-
-            </tbody>
-
-        </table>
-
-    </section>
-
-</main>
+            <!-- Tabla de Reservas -->
+            <section class="card">
+                <h2>Reservas</h2>
+                <div class="table-container">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Experiencia</th>
+                                <th>Cantidad</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="3" class="empty-table-msg">
+                                    Aún no hay reservas registradas.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </main>
     <!-- Pie de Página -->
     <footer class="main-footer">
         <div class="footer-container">
@@ -105,4 +123,5 @@
     </footer>
 
 </body>
+
 </html>
