@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QuestPass CR - Inicio</title>
+    <title>QuestPass CR - Iniciar Sesión</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
 
     <!-- Header y Navegación -->
     <header class="main-header">
         <div class="header-container">
             <a href="index.html" class="brand-logo">QuestPass CR</a>
-            
+
             <nav class="main-nav" aria-label="Navegación principal">
                 <ul>
-                    <li><a href="index.html" >Inicio</a></li>
+                    <li><a href="index.html">Inicio</a></li>
                     <li><a href="experiencias.html">Experiencias</a></li>
                     <li><a href="reservar.html">Reservar</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
@@ -25,39 +27,31 @@
             </nav>
         </div>
     </header>
- 
 
-<main>
 
-    <section class="card">
+    <main>
+        <section class="form-card login-card" aria-labelledby="titulo-login">
+            <h1 id="titulo-login">Iniciar Sesión</h1>
+            <p class="form-intro">Ingresa tus credenciales para acceder a tu cuenta.</p>
 
-        <h2>Iniciar Sesión</h2>
+            <form action="#" method="post" class="site-form">
+                <div class="form-group">
+                    <label for="correo">Correo electrónico *</label>
+                    <input type="email" id="correo" name="correo" autocomplete="email" placeholder="nombre@correo.com"
+                        required>
+                </div>
 
-        <form>
+                <div class="form-group">
+                    <label for="password">Contraseña *</label>
+                    <input type="password" id="password" name="password" autocomplete="current-password"
+                        placeholder="••••••••" required>
+                </div>
 
-            <label for="correo">Correo electrónico</label>
-            <input
-                type="email"
-                id="correo"
-                name="correo"
-                required>
+                <button type="submit" class="btn btn-primary form-submit">Ingresar</button>
+            </form>
+        </section>
+    </main>
 
-            <label for="password">Contraseña</label>
-            <input
-                type="password"
-                id="password"
-                name="password"
-                required>
-
-            <button type="submit" class="btn btn-card" >
-                Ingresar
-            </button>
-
-        </form>
-
-    </section>
-
-</main>
     <!-- Pie de Página -->
     <footer class="main-footer">
         <div class="footer-container">
@@ -80,4 +74,5 @@
     </footer>
 
 </body>
+
 </html>
