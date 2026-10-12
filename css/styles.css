@@ -299,3 +299,56 @@ input{
         font-size: 2.75rem;
     }
 }
+
+/* admin layout y tablas */
+.admin-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.table-container {
+    overflow-x: auto;
+    margin-top: 1rem;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.data-table th,
+.data-table td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.data-table th {
+    border-bottom: 2px solid var(--primary-color);
+    color: var(--text-light);
+}
+
+.empty-table-msg {
+    text-align: center;
+    color: var(--text-muted);
+    padding: 1.5rem 1rem;
+}
+
+/* formulario de login contenedor */
+.login-card {
+    max-width: 450px;
+    margin: 2rem auto;
+}
+
+.form-intro {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+.form-submit {
+    width: 100%;
+    margin-top: 1rem;
+}
