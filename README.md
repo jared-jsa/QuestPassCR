@@ -57,3 +57,18 @@ QuestPass CR es una aplicación web multipágina desarrollada con **HTML5 semán
 * **HTML5** (Estructura y semántica)
 * **CSS3** (Variables CSS, Flexbox y CSS Grid)
 * **Git & GitHub** (Control de versiones y colaboración)
+
+## Estructura de Carpetas
+
+```text
+QuestPassCR/
+├── css/
+│   └── styles.css
+├── index.html
+├── experiencias.html
+├── detalle.html
+├── reservar.html
+├── contacto.html
+├── login.html
+├── admin.html
+└── README.md
